@@ -7,6 +7,10 @@ module "gks-aws-ec2" {
   environment_name                = var.environment_name
   ec2_subnet_id                   = module.gks-aws-subnet.id
   ec2_associate_public_ip_address = var.ec2_associate_public_ip_address
+  ec2_ssh_public_key = {
+    "name" = var.ec2_ssh_public_key["name"]
+    "key"  = file(var.ec2_ssh_public_key["key"])
+  }
 
 }
 

@@ -32,7 +32,7 @@ variable "ec2_ssh_public_key" {
   type        = map(string)
   default     = {
     "name" = "geekestan-ssh-public-key"
-    "key"  = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCZMPGx4zK0UBKOw+MI0OsZ7CCL2oVlGPORAIA31TPDpz3Ze+w0nh6Iy7aUHVeghXWpmnvQIfOiWbIPCWpMz10qrJ2/Hc+JwZHRe5zbPF88Q3tEk5BKlSawdFO01ih1q6XBvXn9DFiNfOVNiIaU6idAlc869BH60Y7gIq8Klvg351OzhGdE1HofZaj0qU4q3Ts+VZX7XMkQcIMN85VotBrl538y9KTCmvnsPPJSgZRDuut6pIfZQHru6RD+4rZHTbreLbV9afm290BdNs1w31sG4rrk4AoSzExUE5e0meNCvdcIPn82mtgGoUtwm5faQgCvZRNr+sZL8i7gfjfENp9NIU36mMUO8wYrnYx7rzrxCDmEEUwfrnw4sygQpw4OXF1qadCmEa3LL1cnbfuP5j2MVAwB4qN0s59nfDXBhPOkRxKcdw2YHS8OXM1364gpvefVpfRmAuFPqcvIWSAQANwKfX0kLZc03ycv7mW/7xAV0txBIVg2V83kqpumXfA+Trz78zH8NliR7z8ww2gkT2iWI8LUyjH3BLB8B8iijWdNe1XQb840AKuFWNxcOjCUWsqXYVmpttBdhFpiy80SgxHHjHNeripxMVGXLXTfZj1L0LXKBT4SZL0tacxdscp5tGAcrJg3W+uHYo4ZdTZeRPUiFNDC17GE8h6ZcvmKTM4KNQ== geekestan ssh public key"
+    "key"  = ""
   }
 }
 
@@ -70,5 +70,5 @@ variable "ec2_associate_public_ip_address" {
 
 variable "environment_name" {
   description = "[gks-aws-ec2] - the environment name"
-  type = string
+  type        = string
 }
