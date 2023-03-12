@@ -5,7 +5,7 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
-
+**/.ssh/*
 # Crash log files
 crash.log
 
